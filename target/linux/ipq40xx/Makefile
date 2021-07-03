@@ -19,6 +19,6 @@ DEFAULT_PACKAGES += \
 	kmod-usb-dwc3-of-simple \
 	kmod-leds-gpio kmod-gpio-button-hotplug swconfig \
 	kmod-ath10k-ct wpad-basic \
-	kmod-usb3 kmod-usb-dwc3 ath10k-firmware-qca4019-ct
+	kmod-usb3 kmod-usb-dwc3 kmod-usb-phy-qcom-dwc3 ath10k-firmware-qca4019-ct-htt
 
 $(eval $(call BuildTarget))
