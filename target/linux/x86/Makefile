@@ -19,7 +19,7 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs
+DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-macvlan kmod-forcedeth kmod-ixgbe kmod-libphy kmod-phy-realtek kmod-usb-net kmod-usb-net-rndis kmod-usb-net-ipheth usbmuxd
 
 $(eval $(call BuildTarget))
 
