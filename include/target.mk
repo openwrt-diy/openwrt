@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2007-2008 OpenWrt.org
+# Copyright (C) 2007-2021 OpenWrt.org
 # Copyright (C) 2016 LEDE Project
 #
 # This is free software, licensed under the GNU General Public License v2.
@@ -13,11 +13,11 @@ __target_inc=1
 DEVICE_TYPE?=router
 
 # Default packages - the really basic set
-DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear mtd uci opkg netifd fstools uclient-fetch logd urandom-seed urngd
+DEFAULT_PACKAGES:=base-files libc libgcc busybox dropbear mtd uci netifd fstools uclient-fetch logd urandom-seed urngd
 # For nas targets
 DEFAULT_PACKAGES.nas:=block-mount fdisk lsblk mdadm
 # For router targets
-DEFAULT_PACKAGES.router:=dnsmasq iptables ip6tables ppp ppp-mod-pppoe firewall odhcpd-ipv6only odhcp6c kmod-ipt-offload
+DEFAULT_PACKAGES.router:=iptables ppp ppp-mod-pppoe firewall kmod-ipt-offload kmod-tcp-bbr
 DEFAULT_PACKAGES.bootloader:=
 
 ifneq ($(DUMP),)
